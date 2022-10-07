@@ -55,7 +55,7 @@ const Shop = (props) => {
                         <Helmet>
                             <title>{`ZeroDue - ${shop.nome}`}</title>
                         </Helmet>
-                        <div className="shop">
+                        <div className="shop main">
                             <h3>{shop.nome}</h3>
                             <div className="shop-div">
                                 <div className="shop-info">
@@ -149,12 +149,12 @@ const Shop = (props) => {
                         }
                         <div className="shop-btns">
                             <Link to={`/orders-history/${id}`}>
-                                <button className="orders-btn">Storico Ordini</button>
+                                <button className="orders-btn button">Storico Ordini</button>
                             </Link>
                             <Link to={`/update/${id}`}>
-                                <button className="update-btn">Aggiorna</button>
+                                <button className="update-btn button">Aggiorna</button>
                             </Link>
-                            <button className="delete-btn" onClick={() => deleteShop(id)}>Cancella</button>  
+                            <button className="delete-btn button" onClick={() => deleteShop(id)}>Cancella</button>  
                         </div>
                     </React.Fragment>
                 ) : (

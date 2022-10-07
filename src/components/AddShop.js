@@ -41,14 +41,16 @@ const AddShop = (props) => {
                 <title>ZeroDue - Add Shop</title>
             </Helmet>
             <Navigation />
-            <Form 
-                submit={submit}
-                errors={errors}
-                title="Aggiungi Negozio"
-                button="Aggiungi"
-                update={false}
-                submitted={submitted}
-            />
+            <div className="add-shop main">
+                <Form 
+                    submit={submit}
+                    errors={errors}
+                    title="Aggiungi Negozio"
+                    button="Aggiungi"
+                    update={false}
+                    submitted={submitted}
+                />
+            </div>
         </React.Fragment>
     )
 }
